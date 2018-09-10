@@ -1,7 +1,7 @@
 FROM alpine:latest
 LABEL maintainer="Jason Wilder <mail@jasonwilder.com>"
 
-RUN apk -U add openssl
+RUN apk -U add openssl bash
 
 ENV VERSION 0.7.3
 ENV DOWNLOAD_URL https://github.com/jwilder/docker-gen/releases/download/$VERSION/docker-gen-alpine-linux-amd64-$VERSION.tar.gz
